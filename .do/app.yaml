@@ -6,3 +6,9 @@ services:
     deploy_on_push: true
     repo: digitalocean/sample-nodejs
   name: sample-nodejs
+  envs:
+  - key: ABC
+    scope: RUN_AND_BUILD_TIME
+    value: BLA
+  instance_size_slug: apps-s-1vcpu-1gb
+  instance_count: 3
